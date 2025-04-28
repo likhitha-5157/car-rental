@@ -1,0 +1,423 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --primary-color: green;
+  --secondary-color: #ccc;
+  --highlight-color: rgb(4, 139, 4);
+  --hover-bg: white;
+  --hover-text: green;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 80px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.logo1 {
+  width: 130px;
+  margin: 0 150px;
+  background-color: transparent;
+}
+
+/* ======= Navigation ======= */
+.top-menu {
+  display: flex;
+}
+
+.top-menu-content {
+  display: flex;
+  padding: 40px 100px 0 50px;
+  list-style: none;
+}
+
+.top-menu-bt {
+  padding: 0 30px;
+}
+
+.top-menu input {
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  font-size: 16px;
+}
+
+.top-menu input:focus {
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.login a {
+  background-color: var(--highlight-color);
+  padding: 8px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.login a:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+/* ======= Search Menu ======= */
+.search-menu {
+  display: flex;
+  margin: 30px 50px 0;
+  padding: 12px 50px 10px 20px;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.search-menu input {
+  border: none;
+  outline: none;
+}
+
+#search-box {
+  margin: 20px 5px;
+  padding: 0 5px;
+  height: 60px;
+}
+
+.search-menu-btn {
+  margin: 30px 0 0 100px;
+  color: black;
+}
+
+.search-menu-i {
+  position: relative;
+  right: 30px;
+}
+
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  margin-left: 80px;
+}
+
+.nav-tabs li {
+  margin-top: 30px;
+}
+
+.nav-item {
+  margin: 20px 50px 10px 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2c2b2b;
+}
+
+/* ======= Hero Section ======= */
+.container {
+  text-align: center;
+  padding: 225px 0 205px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-car {
+  position: relative;
+  left: 20px;
+  top: 40px;
+}
+
+/* ======= Date Bar ======= */
+.date-menu {
+  background-color: aliceblue;
+  padding: 10px 0;
+  width: 500px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  padding: 0 20px 0 10px;
+  border-right: 2px solid black;
+}
+
+.submit-bar {
+  padding: 0 20px;
+}
+
+/* ======= Secondary Buttons ======= */
+.secondary {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.secondary-bt {
+  padding: 0 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0 40px;
+  background-color: navajowhite;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ======= Car Cards ======= */
+.img-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+}
+
+.img-container-btn {
+  padding: 5px;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.img-shape {
+  width: 330px;
+  border-radius: 10px;
+}
+
+/* ======= Brands Row ======= */
+.more {
+  padding-left: 25px;
+  display: flex;
+}
+
+.more-1 {
+  font-size: x-large;
+  margin: 40px 0 0 auto;
+  color: var(--primary-color);
+}
+
+.sellers {
+  display: flex;
+}
+
+.sellers-btn1, .sellers-btn2, .sellers-btn3,
+.sellers-btn4, .sellers-btn5, .sellers-btn6 {
+  padding-top: 38px;
+  padding-left: 10px;
+}
+
+#toyota, #mercedes-benz, #volkswagen,
+#hyundai, #audi, #tata {
+  width: 25px;
+}
+
+#toyota, #mercedes-benz { margin-left: 300px; }
+#volkswagen, #audi { margin-left: 250px; }
+#hyundai { margin-left: 270px; }
+#tata { margin-left: 360px; }
+
+/* ======= About/Footer ======= */
+.about {
+  background-color: black;
+  border-top: 1px solid var(--secondary-color);
+  margin-top: 30px;
+  display: flex;
+  padding-left: 25px;
+  color: var(--secondary-color);
+}
+
+.about-btn {
+  color: var(--secondary-color);
+  padding: 25px 100px 0;
+}
+
+.about-btn p {
+  cursor: pointer;
+}
+
+.last {
+  margin: 40px 0 0 30px;
+  padding-left: 25px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.last-ul {
+  padding-left: 30px;
+}
+
+.last h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.last p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ======= Privacy Section ======= */
+.container1 {
+  margin-left: 30px;
+  padding: 20px;
+}
+
+.container1-ul {
+  margin-left: 30px;
+}
+
+.privacy-security {
+  margin-top: 40px;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 20px;
+}
+
+.privacy-security h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.privacy-security p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ======= Terms Section ======= */
+.terms-conditions {
+  background-color: black;
+  color: var(--secondary-color);
+  padding: 40px 0 30px;
+}
+
+/* ======= Car Details Section ======= */
+.car-detail1 {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.car-detail1-1 { font-size: xx-large; padding-left: 10px; }
+.car-detail1-2 {
+  font-size: x-large;
+  padding: 5px 10px;
+  border: 2px solid skyblue;
+  border-radius: 25px;
+}
+.car-detail1-3, .car-detail1-4, .car-detail1-5,
+.car-detail1-6, .car-detail1-7, .car-detail1-8, .car-detail1-9 {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.car-detail1-10 {
+  font-size: x-large;
+  margin: 5px 0 0 25px;
+  padding: 8px 10px;
+  border-radius: 25px;
+  background-color: rgb(19, 176, 19);
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  color: white;
+}
+.car-detail1-10:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+.more1 {
+  font-size: x-large;
+  margin: 30px 0 20px 1070px;
+  padding: 5px 10px;
+  border: 1px solid var(--primary-color);
+  background-color: rgb(81, 232, 81);
+}
+.car-detail1-img { margin-left: 80px; }
+.car-detail1-img2 { margin-left: 40px; }
+#car-detail1-img3 {
+  margin-left: 70px;
+  margin-top: 70px;
+  color: var(--primary-color);
+}
+
+/* ======= Third Menu Section ======= */
+.third-menu {
+  margin-top: 50px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.third-menu-item, .third-menu-item2, .third-menu-item3, .third-menu-item4 {
+  margin-top: 90px;
+  padding: 70px 70px 30px;
+  border: 1px solid gray;
+  border-radius: 10%;
+}
+
+.third-menu-item2 { margin-left: 30px; }
+.third-menu-item3 { padding: 70px 90px 30px 90px; margin-left: 30px; }
+.third-menu-item4 { padding: 70px 50px 30px 50px; margin-left: 30px; }
+
+.third-menu-item-i, .third-menu-item-j {
+  position: relative;
+  top: 60px;
+  font-size: 3rem;
+  background-color: aliceblue;
+}
+
+.third-menu-item-i { left: 55px; }
+.third-menu-item-j { left: 80px; }
+
+.third-menu-item-c, .third-menu-item-c2,
+.third-menu-item-c3, .third-menu-item-c4 {
+  position: relative;
+  font-size: 3rem;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  color: white;
+  bottom: 100px;
+}
+
+.third-menu-item-c, .third-menu-item-c3 {
+  background-color: navy;
+  left: 30px;
+}
+.third-menu-item-c2, .third-menu-item-c4 {
+  background-color: orange;
+}
+.third-menu-item-c3 { left: 20px; }
+.third-menu-item-c4 { left: 50px; }
+
+/* ======= Icon Container ======= */
+.icon-container1 button {
+  position: relative;
+  bottom: 0;
+  color: var(--secondary-color);
+}
+
+/* ======= Responsive Design ======= */
+@media screen and (max-width: 768px) {
+  .top-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo1 {
+    margin: 0;
+  }
+  .search-menu {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .img-container {
+    justify-content: center;
+  }
+}
